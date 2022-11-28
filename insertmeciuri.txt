@@ -1,0 +1,1 @@
+//deja folosita//INSERT INTO `fotbal`.`meciuri` (`codunicmeci`, `codunicliga`, `data`, `codunicechipaG`, `gg`, `go`, `codunicechipaO`, `ggp`, `gop`, `ggpr`, `gopr`, `ggpen`, `gopen`, `codunicparteadinsezon`, `codunicetapa`) VALUES ('2', '1', '2022-06-30 00:00:00', '3', '4', '1', '4', '1', '0', '', '', '', '', '1', '1');

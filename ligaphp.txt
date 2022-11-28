@@ -1,0 +1,45 @@
+inregistrare liga de fotbal liga 1
+
+server xammp1 apache mysql php javascript html css 
+database :  fotbal
+tabele:     echipe    : string denumire, int codunicechipa , string logo, int codunicjudet, string indexul, int codunicclasament. 
+            meciuri   : int codunicmeci, int codunicliga , datetime data, int codunicechipaG, int gg, int go, int codunicechipaO, int ggp, int gop, int ggpr, int gopr ,int ggpen, int gopen.  
+            meciurinejucate   : int codunicmeci, int codunicliga , datetime data, int codunicechipaG, int gg, int go, int codunicechipaO, int ggp, int gop, int ggpr, int gopr int ggpen, int gopen.  
+            clasamentTotal :  int codunicclasament, int codunicparteadinsezon, int etapa, int m, int v, int e, int i, int gma, int gpa, int gola, int adva, int pcta, int gmpa, int gppa, int penalizare. 
+            clasamentAcasa :  int codunicclasament,int codunicparteadinsezon, int etapa, int m, int v, int e, int i, int gmd, int gpd, int gold, int advd, int pctd, int gmpd, int gppd, int penalizare.
+            clasamentDeplasare :  int codunicclasament,int codunicparteadinsezon, int etapa, int m, int v, int e, int i, int gmt, int gpt, int golt, int advt, int pctt, int gmpt, int gppt, int penalizare.
+            liga : int codunicliga, string codunictara, , string denumireliga, datatime datastart, datatime datafinal.
+            judete : int codunicjudet, string judet, string indexjudet, int codunictara.
+            tari : int codunictara, string denumiretara, string indextara, string flag, string anthem, double populatie, double teritoriu, double densitate.
+            orase : int codunicoras, string denumireoras, string indexoras, int codunicjudet, string flag, string anthem, double populatie, double teritoriu, double densitate.
+            partidinsezon : int codunicparteadinsezon, string denumirea.
+
+            functii:
+            creare, modificare , stergere :  tari, judete, ligi, orase , echipe, partidinsezon
+            pentru fiecare echipa creaza un clasament compus din 3 clasamente A,D,T
+            ordoneaza clasamentele a.i. echipa cu P > sa fie prima apoi dupa G
+            la finalul turului creaza inca 1 clasament cu ADT care sa prea datele cu P 1/2 din sezonul regular si rotunjirile
+            
+            
+            se vor mai adauga paginile :
+            tabelul cu rezultate XY si tabelul cu meciuri nejucate inca XY 
+            tabelul cu etapele din sezonul regular 
+            pagina cu clasamentul acasa, deplasare, si total si clasamentul cu toatele cele 3
+            pagini pentru fiecare functie CMS
+            pagini de comenzi pentru creare clasamente, ordonare, extragere date
+
+            conectare la baza de date
+
+            
+
+
+
+
+
+
+
+
+
+
+
+            

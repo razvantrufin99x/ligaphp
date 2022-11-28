@@ -1,0 +1,28 @@
+
+//cautare toate meciurile unei echipe din meciuri
+$p = "";
+for($i = 1; i<=16; i++)
+{ 
+$sql = " select * from meciuri where (codunicechipaG=".$i." or codunicechipaO=".$i.")";
+ $resursa = mysql_query($sql);
+  while($row = mysql_fetch_array($resursa))
+  {
+	if($row['codunicaechipaG']==$i){
+		if($row['gm']>$row['gp']){$p+="3";}
+		else if($row['gm']==$row['gp']){$p+="1";}
+		else ($row['gm']<$row['gp']){$p+="0";}
+		
+	}
+	else if($row['codunicaechipaO']==$i){
+		if($row['gm']<$row['gp']){$p+="3";}
+		else if($row['gm']==$row['gp']){$p+="1";}
+		else ($row['gm']>$row['gp']){$p+="0";}
+	}	
+	$p+=",";
+  }
+ //update puncteobtinute.puncteperetapa = $p
+ //....
+ $p="";
+}
+
+
